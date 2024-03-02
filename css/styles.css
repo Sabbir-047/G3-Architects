@@ -23,29 +23,30 @@ font-style: normal; */
 /* common styles */
 .text-primary {
     color: rgb(19, 19, 19);
-    font-size: 2.813rem;
+    font-size: 2.813em;
     font-weight: 700;
-    line-height: 3.313rem;
+    line-height: 3.313em;
     letter-spacing: 0%;
 }
 
 .text-secondary {
     color: rgb(114, 114, 114);
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 1.625rem;
+    line-height: 1.625em;
     letter-spacing: 0%;
 }
 
 .btn-primary {
     color: rgb(255, 255, 255);
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-weight: 600;
-    line-height: 1.438rem;
+    line-height: 1.438em;
     text-align: center;
+    border: none;
     border-radius: 8px;
     background: rgb(255, 144, 14);
-    padding: 1.25rem 1.563rem;
+    padding: 1.25rem 1.56em;
 }
 
 
@@ -57,7 +58,7 @@ header {
 
 #header {
     max-width: 1440px;
-    margin: 0rem 15rem;
+    margin: 0rem 15em;
 }
 
 
@@ -66,7 +67,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3.125rem;
+    padding-top: 3.125em;
 }
 
 nav ul {
@@ -80,11 +81,37 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 1.5em;
     color: rgb(66, 66, 66);
     font-size: 1.2rem;
     font-weight: 500;
-    line-height: 1.625rem;
+    line-height: 1.625em;
+}
+
+
+/* banner */
+
+.banner-description {
+    max-width: 868px;
+    margin: 0 auto;
+    padding: 6.25rem 0rem;
+    text-align: center;
+}
+
+.banner-description h1 {
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.68rem;
+}
+
+.banner-description p {
+    margin-bottom: 2rem;
+}
+
+.banner-picture img {
+    width: 100%;
+    padding-bottom: 2.8rem;
 }
 
 
@@ -104,28 +131,47 @@ nav ul li a {
 
 
 /* responsive web design */
-@media screen and (max-width: 576px) {
-    
-}
+@media screen and (max-width: 576px) {}
 
 @media screen and (max-width: 768px) {
     #header {
-        max-width: 1440px;
         margin: 0rem 1rem;
     }
+
     nav {
         display: flex;
         flex-direction: column;
         padding-top: 1.25rem;
     }
+
     nav ul {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
         padding-top: 1rem;
         text-align: center;
     }
-    nav ul li{
+
+    nav ul li {
         margin-bottom: 1rem;
+    }
+
+    .banner-description {
+        padding: 1.25rem 0rem;
+    }
+
+    .banner-description h1 {
+        font-size: 3rem;
+        line-height: 3.68rem;
+    }
+
+    .banner-description button {
+        font-size: .8em;
+        padding: .8rem 1.2em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #header {
+        margin: 0rem 3rem;
     }
 }
