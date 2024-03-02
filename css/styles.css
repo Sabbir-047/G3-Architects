@@ -134,7 +134,6 @@ main section {
 }
 
 .feature-images {
-    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -175,15 +174,10 @@ main section {
 
     #feature-container {
         flex-direction: column;
-        /* gap: 4.5rem; */
-        /* padding: 0rem 3.75rem; */
     }
 
     .feature-images {
-        width: 100%;
-        /* display: grid; */
         grid-template-columns: repeat(1, 1fr);
-        /* gap: 1.5rem; */
     }
 
     .feature-images img {
@@ -243,10 +237,13 @@ main section {
     main section {
         padding-bottom: 3.25rem;
     }
+    .feature-images {
+        width: 100%;
+    }
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     #header {
         margin: 0rem 3rem;
     }
@@ -256,8 +253,6 @@ main section {
     }
 
     .feature-images {
-        width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
     }
 }
