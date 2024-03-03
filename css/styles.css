@@ -161,6 +161,7 @@ main section {
     text-align: center;
     margin-top: 6.215rem;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .fact-box{
@@ -168,6 +169,46 @@ main section {
     border: 1px solid rgb(255, 144, 14);
     border-radius: .5rem;   
     padding: 2rem; 
+}
+
+
+
+/* sponsors */
+.sponsor-info{
+    text-align: center;
+    max-width: 542px;
+    margin: 0 auto;
+}
+
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.125rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sponsor{
+    border: 3px dashed #727272;
+}
+
+
+
+
+/* footer */
+footer{
+    max-width: 1440px;
+    margin: 0 15rem;
+}
+
+.footer{
+    border-radius: .5rem;
+    background: rgb(255, 244, 231);
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 2.385rem;
+    margin-bottom: 13.5rem;
 }
 
 
@@ -223,6 +264,13 @@ main section {
     .feature-info p {
         margin: 1.8rem 0rem;
     }
+    /* footer */
+    footer{
+        margin: 0 1rem;
+    }
+    .footer{
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -273,6 +321,13 @@ main section {
         width: 100%;
     }
 
+    footer{
+        margin: 0 1rem;
+    }
+    .footer{
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -286,5 +341,12 @@ main section {
 
     .feature-images {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer{
+        margin: 0 1rem;
+    }
+    .footer{
+        margin-bottom: 2rem;
     }
 }
