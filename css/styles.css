@@ -153,6 +153,38 @@ main section {
 
 
 
+/* facts section */
+.fact-boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 6.215rem;
+    flex-wrap: wrap;
+}
+
+.fact-box{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: .5rem;   
+    padding: 2rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
